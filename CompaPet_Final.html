@@ -186,6 +186,11 @@
                         </div>
                         <p class="text-sm mt-4 opacity-80">Mascotas felices, dueños tranquilos</p>
                     </div>
+
+                    <button onclick="skipOnboarding()" class="absolute top-4 right-4 text-white text-sm opacity-80 hover:opacity-100">
+            Saltar →
+        </button>
+
                 </div>
                 
                 <div class="progress-dots mb-8">
@@ -2505,6 +2510,16 @@
             }
         `;
         document.head.appendChild(style);
+
+    </script>
+
+        <script>
+        function skipOnboarding() {
+            // Oculta todos los slides
+            document.querySelectorAll(".slide").forEach(slide => slide.style.display = "none");
+            // Muestra directamente el último slide
+            document.getElementById("slide4").style.display = "flex";
+        }
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98162867248ac2d8',t:'MTc1ODI1NDIzNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
